@@ -59,6 +59,11 @@ namespace HomeWork31._03
             //Задание 2
             System.Console.WriteLine("Запись заданного массива в обратном порядке.");
             VivodMassiva(PreobrazovanieMassiva(array));
+            //или можно так
+            System.Console.WriteLine();
+            System.Console.WriteLine("\nАльтернативный метод:");
+            Array.Reverse(array);
+            VivodMassiva(array);
             //Задание 3
             System.Console.WriteLine("\n");
             System.Console.WriteLine("Заданный массив:");
