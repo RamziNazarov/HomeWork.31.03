@@ -75,29 +75,18 @@ namespace HomeWork31._03
             int index_ = int.Parse(Console.ReadLine());
             System.Console.WriteLine("Новый массив:");
             int[] arr = new int[count];
-            if((array.Length - index_) >= count)
+            for(int i = 0; i < count; i++)
             {
-                for(int i = 0; i < count;i++)
+                if(index_<array.Length)
                 {
                     arr[i] = array[index_];
                     index_++;
                 }
-                VivodMassiva(arr);
-            }
-            else {
-                for(int i = 0; i < count; i++)
-                {
-                    if(index_<array.Length)
-                    {
-                        arr[i] = array[index_];
-                        index_++;
-                    }
-                    else {
-                        arr[i] = 1;
-                    }
+                else {
+                    arr[i] = 1;
                 }
-                VivodMassiva(arr);
             }
+            VivodMassiva(arr);
             Console.ReadKey();
         }
     }
