@@ -54,22 +54,18 @@ namespace HomeWork31._03
             System.Console.WriteLine($"\nНаименьшее значение массива: {min_}");
             System.Console.WriteLine($"Наибольшее значение массива: {max_}");
             System.Console.WriteLine($"Общая сумма всех элементов: {summaAndSredneArifmeticheskiy}");
-            System.Console.WriteLine($"Среднее арифметическое всех элементов: {Math.Round(summaAndSredneArifmeticheskiy/array.Length,1)}");
-            System.Console.WriteLine();
+            System.Console.WriteLine($"Среднее арифметическое всех элементов: {Math.Round(summaAndSredneArifmeticheskiy/array.Length,1)}\n");
             //Задание 2
             System.Console.WriteLine("Запись заданного массива в обратном порядке.");
             VivodMassiva(PreobrazovanieMassiva(array));
             //или можно так
-            System.Console.WriteLine();
-            System.Console.WriteLine("\nАльтернативный метод:");
+            System.Console.WriteLine("\n\nАльтернативный метод:");
             Array.Reverse(array);
             VivodMassiva(array);
             //Задание 3
-            System.Console.WriteLine("\n");
-            System.Console.WriteLine("Заданный массив:");
+            System.Console.WriteLine("\n\nЗаданный массив:");
             VivodMassiva(array);
-            System.Console.WriteLine();
-            System.Console.Write("Введите количество элементов: ");
+            System.Console.Write("\nВведите количество элементов: ");
             count = int.Parse(Console.ReadLine());
             System.Console.Write("Введите индекс: ");
             int index_ = int.Parse(Console.ReadLine());
